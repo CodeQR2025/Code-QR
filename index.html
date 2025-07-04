@@ -24,63 +24,53 @@
       text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     }
 
-    .contact-list {
-      display: flex;
-      justify-content: center;
-      gap: 60px;
-      flex-wrap: wrap;
-    }
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
 
-   .contact-item {
-  background: linear-gradient(90deg, #ed1c24, #303642);
-  border-radius: 25px;
-  padding: 40px 50px;
-  color: rgb(215, 213, 213);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-  width: 200px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-    .contact-item:hover {
-      transform: scale(1.08);
-      background: linear-gradient(90deg, #ed1c24, #303642);
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
-    }
-
-    .contact-item img {
-      width: 100px;
-      height: 100px;
-    }
-
-@media screen and (max-width: 480px) {
   .contact-item {
+    background: linear-gradient(90deg, #ed1c24, #303642);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
     width: 90vw;
-    padding: 30px 20px;
-    font-size: 1.3rem;
-    gap: 15px;
+    max-width: 500px;
+    color: rgb(215, 213, 213);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+
+  .contact-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
   }
 
   .contact-item img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
 
-  h2 {
-    font-size: 2rem;
-    text-align: center;
-    padding: 0 15px;
-  }
-}
+  @media screen and (max-width: 600px) {
+    .contact-item {
+      font-size: 1.2rem;
+      padding: 15px 20px;
+    }
 
+    .contact-item img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+ 
     
   </style>
 </head>
@@ -88,22 +78,22 @@
 
   <h2>Choisissez un moyen de contact :</h2>
 
-  <div class="contact-list">
-    <a class="contact-item" href="tel:+213540808673">
-      <img src="https://img.icons8.com/fluency/96/phone.png" alt="Appel"><br>
-      <span>Appeler</span>
-    </a>
+ <div class="contact-list">
+  <a class="contact-item" href="tel:+213540808673">
+    <img src="https://img.icons8.com/fluency/96/phone.png" alt="Appel">
+    <span>Appeler</span>
+  </a>
 
-    <a class="contact-item" href="viber://chat?number=%2B213540808673">
-      <img src="https://img.icons8.com/color/96/viber.png" alt="Viber"><br>
-      <span>Viber</span>
-    </a>
+  <a class="contact-item" href="viber://chat?number=%2B213540808673">
+    <img src="https://img.icons8.com/color/96/viber.png" alt="Viber">
+    <span>Viber</span>
+  </a>
 
-    <a class="contact-item" href="https://wa.me/213540808673">
-      <img src="https://img.icons8.com/color/96/whatsapp.png" alt="WhatsApp"><br>
-      <span>WhatsApp</span>
-    </a>
-  </div>
+  <a class="contact-item" href="https://wa.me/213540808673">
+    <img src="https://img.icons8.com/color/96/whatsapp.png" alt="WhatsApp">
+    <span>WhatsApp</span>
+  </a>
+</div>
 
 </body>
 </html>
